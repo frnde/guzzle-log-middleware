@@ -8,11 +8,10 @@
         "logging"
     ],
     "license": "MIT",
-    "homepage": "https://github.com/gmponos/guzzle-log-middleware",
+    "homepage": "https://github.com/frnde/guzzle-log-middleware",
     "authors": [
         {
-            "name": "George Mponos",
-            "email": "gmponos@gmail.com"
+            "name": "FreenetMail Team"
         }
     ],
     "autoload": {
