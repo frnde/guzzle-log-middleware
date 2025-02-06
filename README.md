@@ -11,7 +11,7 @@ This is a fork of the repository https://github.com/gmponos/guzzle-log-middlewar
 This is a middleware for [guzzle](https://github.com/guzzle/guzzle) that will help you automatically log every request 
 and response using a PSR-3 logger.
 
-The middleware is functional with version 6 of Guzzle.
+The middleware is functional with version 7 of Guzzle.
 
 ## Install
 

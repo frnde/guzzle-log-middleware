@@ -11,7 +11,12 @@
     "homepage": "https://github.com/frnde/guzzle-log-middleware",
     "authors": [
         {
-            "name": "FreenetMail Team"
+            "name": "George Mponos",
+            "email": "gmponos@gmail.com"
+        },
+        {
+            "name": "FreenetMail Team",
+            "email": "freenetMail_Entwicklung@freenet-ag.de"
         }
     ],
     "autoload": {
