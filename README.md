@@ -6,7 +6,7 @@
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/gmponos/monolog-slack/blob/master/LICENSE.md)
 
 
-This guzzle logger is a fork of the abandoned repository: https://github.com/gmponos/guzzle-log-middleware
+This is a fork of the repository https://github.com/gmponos/guzzle-log-middleware by George Mponos.
 
 This is a middleware for [guzzle](https://github.com/guzzle/guzzle) that will help you automatically log every request 
 and response using a PSR-3 logger.
