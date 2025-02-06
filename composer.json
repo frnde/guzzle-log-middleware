@@ -1,5 +1,5 @@
 {
-    "name": "gmponos/guzzle_logger",
+    "name": "frnde/guzzle_logger",
     "description": "A Guzzle middleware to log request and responses automatically",
     "keywords": [
         "psr3",
@@ -8,11 +8,10 @@
         "logging"
     ],
     "license": "MIT",
-    "homepage": "https://github.com/gmponos/guzzle-log-middleware",
+    "homepage": "https://github.com/frnde/guzzle-log-middleware",
     "authors": [
         {
-            "name": "George Mponos",
-            "email": "gmponos@gmail.com"
+            "name": "FreenetMail Team"
         }
     ],
     "autoload": {
@@ -26,13 +25,14 @@
         }
     },
     "require": {
-        "php": "^7.2 || ^8.0",
+        "php": "^8.0",
         "ext-json": "*",
-        "guzzlehttp/guzzle": "^6.1 || ^7.0.1",
+        "guzzlehttp/guzzle": "^7.0.1",
         "guzzlehttp/psr7": "^1.7 || ^2.0",
         "psr/log": "^1.1 || ^2.0 || ^3.0"
     },
     "require-dev": {
+        "colinodell/psr-testlogger": "^1.2",
         "phpstan/phpstan": "~0.12.32",
         "phpstan/phpstan-phpunit": "^0.12.11",
         "phpstan/phpstan-strict-rules": "^0.12.2",
