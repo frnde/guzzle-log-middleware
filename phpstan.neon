@@ -3,29 +3,9 @@ includes:
 
 parameters:
     level: 8
-    checkMissingIterableValueType: false
     reportUnmatchedIgnoredErrors: false
     paths:
         - src
         - tests
     ignoreErrors:
-        - '#Parameter \#3 \$transferTime of class GuzzleHttp\\TransferStats constructor expects null, float given.#'
-
-rules:
-    - PHPStan\Rules\BooleansInConditions\BooleanInBooleanAndRule
-    - PHPStan\Rules\BooleansInConditions\BooleanInBooleanNotRule
-    - PHPStan\Rules\BooleansInConditions\BooleanInBooleanOrRule
-    - PHPStan\Rules\BooleansInConditions\BooleanInElseIfConditionRule
-    - PHPStan\Rules\BooleansInConditions\BooleanInIfConditionRule
-    - PHPStan\Rules\BooleansInConditions\BooleanInTernaryOperatorRule
-    - PHPStan\Rules\Functions\MissingFunctionParameterTypehintRule
-    - PHPStan\Rules\Methods\MissingMethodParameterTypehintRule
-    - PHPStan\Rules\Methods\WrongCaseOfInheritedMethodRule
-    - PHPStan\Rules\SwitchConditions\MatchingTypeInSwitchCaseConditionRule
-    - PHPStan\Rules\VariableVariables\VariableMethodCallRule
-    - PHPStan\Rules\VariableVariables\VariableStaticMethodCallRule
-    - PHPStan\Rules\VariableVariables\VariableVariablesRule
-
-services:
-    -
-        class: PHPStan\Rules\BooleansInConditions\BooleanRuleHelper
+        - identifier: missingType.iterableValue
