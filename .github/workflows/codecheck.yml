@@ -3,14 +3,19 @@ name: CI
 on: [push]
 
 jobs:
-    build-test:
+    phpstan:
         runs-on: ubuntu-latest
 
         steps:
             - uses: actions/checkout@v3
             - uses: php-actions/composer@v6
-            - uses: php-actions/phpstan@v3
-              with:
-                  path: src/
 
-        # ... then your own project steps ...
+            - name: PHPStan Static Analysis
+              uses: php-actions/phpstan@v3
+              with:
+                  configuration: ./phpstan.neon
+                  memory_limit: 512M
+            - name: PHP Syntax Checker (Lint)
+              uses: StephaneBour/actions-php-lint@8.2
+              with:
+                  dir: ./src
