@@ -20,3 +20,9 @@ jobs:
               uses: StephaneBour/actions-php-lint@8.2
               with:
                   dir: ./src
+
+            - name: PHP Compatibility Checker
+              uses: pantheon-systems/phpcompatibility-action@dev
+              with:
+                  test-versions: 8.0-
+                  paths: ${{ github.workspace }}/src
